@@ -9,17 +9,23 @@ var io = require('socket.io')(server);
 // port
 server.listen(process.env.PORT || 80, function(){
 	console.log('server dang chay....');
+	
+var fs = require('fs');
+fs.open('./www/demo2.txt', 'w', function (err, file) {
+  if (err) throw err;
+  console.log('Saved!');
+
 });
 
 // tài xỉu
 
 
-var Taixiu = function(){
+var Taixiu = function(seft.idPhien ++, this.ketQua){
 
     // cài đặt
     this.idPhien             = 0;  // id phiên đặt
-    this.timeDatCuoc         = 20 // thời gian đặt cược = 60s;
-    this.timechophienmoi     = 10; // thời gian chờ phiên mới = 10s;
+    this.timeDatCuoc         = 3; // thời gian đặt cược = 60s;
+    this.timechophienmoi     = 3; // thời gian chờ phiên mới = 10s;
     this.soNguoiChonTai      = 0;  // Số người đặt tài
     this.soNguoiChonXiu      = 0;  // Số người đặt xỉu
     this.tongTienDatTai      = 0;  // tổng tiền đặt tài
