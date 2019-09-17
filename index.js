@@ -9,12 +9,6 @@ var io = require('socket.io')(server);
 // port
 server.listen(process.env.PORT || 80, function(){
 	console.log('server dang chay....');
-	
-var fs = require('fs');
-fs.open('./www/demo2.txt', 'w', function (err, file) {
-  if (err) throw err;
-  console.log('Saved!');
-
 });
 
 // tài xỉu
