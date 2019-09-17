@@ -18,7 +18,7 @@ var Taixiu = function(){
 
     // cài đặt
     this.idPhien             = 0;  // id phiên đặt
-    this.timeDatCuoc         = 0.1; // thời gian đặt cược = 60s;
+    this.timeDatCuoc         = 20 // thời gian đặt cược = 60s;
     this.timechophienmoi     = 10; // thời gian chờ phiên mới = 10s;
     this.soNguoiChonTai      = 0;  // Số người đặt tài
     this.soNguoiChonXiu      = 0;  // Số người đặt xỉu
